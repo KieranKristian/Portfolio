@@ -472,10 +472,15 @@ footer{
 /*---------Showcase---------*/
 /*--------------------------*/
 
-.Showcase-Header{
-    margin: var(--gutter-small);
+.Showcase-Header nav{
+    justify-content: flex-start;
+    margin-left: var(--gutter-small);
+}
+
+.title{
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
+    margin-bottom: var(--gutter-small);
 }
 
 .Showcase-Content{
@@ -483,30 +488,7 @@ footer{
     justify-content: space-between;
 }
 
-/* .Home-Button{
-    background: var(--orange);
-    height: 5.5rem;
-    width: 5.5rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 50%;
-}
 
-.Home-Button img{
-    height: 60px;
-} */
-
-/* .Showcase-Image{
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-}
-
-.Showcase-Content img{
-    margin: var(--gutter-small);
-    width: 1000px;
-} */
 
 .Showcase-Video{
     display: flex;
@@ -517,9 +499,32 @@ footer{
 }
 
 .Showcase-Text {
-     display: flex;
+    display: flex;
     align-items: center;
     flex-direction: column; 
     margin-left: var(--gutter-medium);
 }
 
+@media(max-width: 1670px){
+    .Showcase-Content{
+        flex-direction: column;
+    }
+}
+
+@media(max-width: 1070px){
+    .Showcase-Video{
+        scale: 80%;
+    }
+}
+
+@media(max-width: 880px){
+    .Showcase-Video{
+        scale: 60%;
+    }
+}
+
+@media(max-width: 570px){
+    .Showcase-Video{
+        scale: 30%;
+    }
+}
