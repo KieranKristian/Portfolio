@@ -504,8 +504,9 @@ footer{
 }
 
 .Showcase-Text{
-    display: flex;
+    /* display: flex;
     align-items: center;
-    flex-direction: column;
+    flex-direction: column; */
+    margin-left: var(--gutter-huge);
 }
 
