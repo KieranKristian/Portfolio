@@ -165,6 +165,7 @@ h2::after{
     width: 12rem;
     margin-top: 1rem;
     background-color: var(--orange);
+    max-width: 100%;
 }
 
 h3{
@@ -293,6 +294,7 @@ nav a:hover::after{
 .work-box{
     display: flex;
     align-items: center;
+    justify-content: space-between;
     gap: var(--gutter-large);
     margin-top: var(--gutter-xsmall);
 }
@@ -465,3 +467,45 @@ footer{
 .back-to-top img{
     height: 60px;
 }
+
+/*--------------------------*/
+/*---------Showcase---------*/
+/*--------------------------*/
+
+.Showcase-Header{
+    margin: var(--gutter-small);
+    display: flex;
+    justify-content: space-around;
+}
+
+.Home-Button{
+    background: var(--orange);
+    height: 5.5rem;
+    width: 5.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+}
+
+.Home-Button img{
+    height: 60px;
+}
+
+.Showcase-Image{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.Showcase-Content img{
+    margin: var(--gutter-small);
+    width: 1000px;
+}
+
+.Showcase-Text{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
