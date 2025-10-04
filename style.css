@@ -478,7 +478,12 @@ footer{
     justify-content: space-around;
 }
 
-.Home-Button{
+.Showcase-Content{
+    display: flex;
+    justify-content: space-between;
+}
+
+/* .Home-Button{
     background: var(--orange);
     height: 5.5rem;
     width: 5.5rem;
@@ -490,9 +495,9 @@ footer{
 
 .Home-Button img{
     height: 60px;
-}
+} */
 
-.Showcase-Image{
+/* .Showcase-Image{
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -501,12 +506,20 @@ footer{
 .Showcase-Content img{
     margin: var(--gutter-small);
     width: 1000px;
+} */
+
+.Showcase-Video{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-right: var(--gutter-medium);
+    margin-left: var(--gutter-small);
 }
 
-.Showcase-Text{
-    /* display: flex;
+.Showcase-Text {
+     display: flex;
     align-items: center;
-    flex-direction: column; */
-    margin-left: var(--gutter-huge);
+    flex-direction: column; 
+    margin-left: var(--gutter-medium);
 }
 
