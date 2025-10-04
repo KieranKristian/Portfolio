@@ -528,3 +528,9 @@ footer{
         scale: 30%;
     }
 }
+
+@media(max-width: 300px){
+    .Showcase-Video{
+        scale: 20%;
+    }
+}
