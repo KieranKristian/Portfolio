@@ -489,8 +489,6 @@ footer{
     align-content: center;
     flex-wrap: wrap;
     align-items: center;
-
-    
 }
 
 .showcase-about{
@@ -505,8 +503,7 @@ footer{
     padding: 5px;
     border: 1px solid black;
     margin-top: 10px;
-    width: 99%;
-    height: 99%;
+     width: 99%;
     border-radius: 15px;
 
     /*Text Style*/
