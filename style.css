@@ -485,17 +485,22 @@ footer{
 
 .Showcase-Content{
     display: flex;
-    justify-content: space-around;
+    flex-direction: column;
+    align-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+
+    
 }
 
 .showcase-about{
     display: flex;
-    flex-direction: column;
     height: 100%;
+    width: 1024px;
 }
 
 .Showcase-Text {
-    max-width: 600px;
+    max-width: 100%;
     background-color: var(--cyanish);
     padding: 5px;
     border: 1px solid black;
@@ -508,6 +513,36 @@ footer{
     color: #100c18;
     font-size: large;
     font-weight: 550;
+}
+
+.Showcase-Text h3{
+    color: #100c18;
+    font-weight: 600;
+}
+
+.Showcase-Text li{
+    margin: 0;
+    padding: 5px 36px ;
+    list-style: none;
+    background-repeat: no-repeat;
+    background-position: left center;
+    background-size: 30px;
+}
+
+.Showcase-Text li:nth-child(1){
+    background-image: url(images/Profile.png);
+}
+
+.Showcase-Text li:nth-child(2){
+    background-image: url(images/MultiProfile.png);
+}
+
+.Showcase-Text li:nth-child(3){
+    background-image: url(images/Tool.png);
+}
+
+.Showcase-Text li:nth-child(4){
+    background-image: url(images/Clock.png);
 }
 
 /* @media(max-width: 1670px){
