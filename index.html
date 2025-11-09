@@ -15,10 +15,7 @@
 <body>
     <!--  Header  -->
     <header id="top">
-        <video autoplay loop muted plays-inline class="back-video">
-            <source src="images/Showreel.mp4" type = "video/mp4">
-        </video>
-        <div class="row">
+        <div class="header-nav">
             <nav>
                 <a href="#work">Projects</a>
                 <!-- <a href="">CV</a> -->
@@ -26,80 +23,92 @@
                 <a href="#contact">Contact</a>
             </nav>
         </div>
-        <div class="row header-text-container">
+
+        <video autoplay loop muted plays-inline class="back-video">
+            <source src="images/Showreel.mp4" type = "video/mp4">
+        </video>
+        
+        <div class="header-text-container">
             <div>
                 <h1>Kieran Kristian</h1>
                 <p>Computer Games Programmer</p>
                 <!-- <a href="" class="btn">Get in touch</a> -->
             </div>
         </div>
+        
+        
     </header>
+    
 
     <!--  Projects  -->
 
     <section id="work">
         <div class="row">
             <h2>My Projects</h2>
-            <div class="work-box">
-                <div class="work-box-text">
-                    <h3>Odd Jobs</h3>
-                    <p>Multiplayer co-op game</p>
-                    <ul>
-                        <li>Role: Lead Programmer</li>
-                        <li>Team Size: 4</li>
-                        <li>Game Engine: Unity</li>
-                        <li>Time Frame: 4 months</li>
-                    </ul>
-                    <div class="work-box-links">
-                        <a href="showcase.html" class="btn-text">Read more &nbsp; &rarr;</a> 
-                        <a href="https://github.com/KieranKristian/Odd-Jobs" class="gh-link"><img src="images/github-icon.png" alt="GitHub"/></a>
-                    </div>
-                </div>
-                <div class="work-box-image">
-                    <img src="images/OddJobsCover.png" alt="Screenshot of game">
-                </div>
-            </div>
-
-            <div class="work-box" id="observer-target">
-                <div class="work-box-text">
-                    <h3>Star Map Navigation</h3>
-                    <p>Star Map Simulation</p>
-                    <ul>
-                        <li>Role: Programmer</li>
-                        <li>Team Size: 1</li>
-                        <li>Game Engine: Unity</li>
-                        <li>Time Frame: 4 months</li>
-                    </ul>
-                    <div class="work-box-links">
-                        <a href="" class="btn-text">Visit Site &nbsp; &rarr;</a>
-                        <a href="" class="gh-link"><img src="images/github-icon.png" alt="GitHub"/></a>
-                    </div>
-                </div>
-                <div class="work-box-image">
-                    <img src="images/game2.png" alt="Screenshot of game">
-                </div>
-            </div>
-
-            <div class="work-box">
-                <div class="work-box-text">
-                    <h3>Project Numero Tres</h3>
-                    <p>Project of a game</p>
-                    <ul>
-                        <li>Fun</li>
-                        <li>Great</li>
-                        <li>Wonderful</li>
-                        <li>Yay</li>
-                    </ul>
-                    <div class="work-box-links">
-                        <a href="" class="btn-text">Visit Site &nbsp; &rarr;</a>
-                        <a href="" class="gh-link"><img src="images/github-icon.png" alt="GitHub"/></a>
-                    </div>
-                </div>
-                <div class="work-box-image">
-                    <img src="images/game3.png" alt="Screenshot of game">
-                </div>
-            </div>
         </div>
+
+            <div class="work-box-container">
+                <div class="work-box">
+                    <div class="work-box-text">
+                        <h3>Odd Jobs</h3>
+                        <p>Multiplayer co-op game</p>
+                        <ul>
+                            <li>Role: Lead Programmer</li>
+                            <li>Team Size: 4</li>
+                            <li>Game Engine: Unity</li>
+                            <li>Time Frame: 4 months</li>
+                        </ul>
+                        <div class="work-box-links">
+                            <a href="showcase.html" class="btn-text">Read more &nbsp; &rarr;</a>
+                            <a href="https://github.com/KieranKristian/Odd-Jobs" class="gh-link"><img src="images/github-icon.png"
+                                    alt="GitHub" /></a>
+                        </div>
+                    </div>
+                    <div class="work-box-image">
+                        <img src="images/OddJobsCover.png" alt="Screenshot of game">
+                    </div>
+                </div>
+            
+                <div class="work-box" id="observer-target">
+                    <div class="work-box-text">
+                        <h3>Star Map Navigation</h3>
+                        <p>Star Map Simulation</p>
+                        <ul>
+                            <li>Role: Programmer</li>
+                            <li>Team Size: 1</li>
+                            <li>Game Engine: Unity</li>
+                            <li>Time Frame: 4 months</li>
+                        </ul>
+                        <div class="work-box-links">
+                            <a href="" class="btn-text">Visit Site &nbsp; &rarr;</a>
+                            <a href="" class="gh-link"><img src="images/github-icon.png" alt="GitHub" /></a>
+                        </div>
+                    </div>
+                    <div class="work-box-image">
+                        <img src="images/game2.png" alt="Screenshot of game">
+                    </div>
+                </div>
+            
+                <div class="work-box">
+                    <div class="work-box-text">
+                        <h3>Project Numero Tres</h3>
+                        <p>Project of a game</p>
+                        <ul>
+                            <li>Fun</li>
+                            <li>Great</li>
+                            <li>Wonderful</li>
+                            <li>Yay</li>
+                        </ul>
+                        <div class="work-box-links">
+                            <a href="" class="btn-text">Visit Site &nbsp; &rarr;</a>
+                            <a href="" class="gh-link"><img src="images/github-icon.png" alt="GitHub" /></a>
+                        </div>
+                    </div>
+                    <div class="work-box-image">
+                        <img src="images/game3.png" alt="Screenshot of game">
+                    </div>
+                </div>
+            </div>
     </section>
 
     <!--  About Me  -->
@@ -113,7 +122,7 @@
                 </div>
                 <div class="about-text">
                     <p>I am a person I am a person I am a person I am a person I am a person I am a person I am a person I am a person I am a person</p>
-                    <a href="" class="btn">My Resume</a>
+                    <a href="" class="btn">CV</a>
                 </div>
             </div>
         </div>
