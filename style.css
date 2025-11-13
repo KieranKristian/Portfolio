@@ -20,7 +20,7 @@ html{
 }
 
 :root{
-    --darkGreen: #004b13;
+    --darkGreen: #005a17;
     --lightGreen: #00ff37; 
     --cyanish: #79b1e2;
     --darkPurple: #100c18; 
@@ -47,7 +47,7 @@ body{
     font-family: 'Montserrat', sans-serif;
     font-size: var(--fs-body);
     line-height: 1.7;
-    font-weight: 300;
+    font-weight: 450;
     background-color: var(--darkPurple);
     overflow-x: hidden;
 }
@@ -211,7 +211,6 @@ header{
 }
 
 .back-video{
-    /* margin-bottom: var(--gutter-small); */
     margin-top: var(--gutter-xsmall);
     max-height: 90%;
 }
@@ -314,6 +313,8 @@ nav a:hover::after{
     justify-content: flex-start;
     gap: var(--gutter-small);
     margin-top: var(--gutter-xsmall);
+
+    max-width: 50%;
 }
 
 @media(max-width: 1145px){
@@ -343,7 +344,7 @@ nav a:hover::after{
 }
 
 .work-box-image{
-    max-width: 500px;
+    max-width: 550px;
 }
 
 @media(max-width: 1350px){
@@ -356,10 +357,6 @@ nav a:hover::after{
     .work-box-image{
         max-width: initial;
     }
-}
-
-.work-box-image img{
-    max-width: 100%;
 }
 
 .work-box-links{
@@ -543,7 +540,7 @@ footer{
     width: 99%;
     border-radius: 15px;
 
-    /*Text Style*/
+    /* Text Style */
     color: #100c18;
     font-size: large;
     font-weight: 550;
@@ -561,6 +558,41 @@ footer{
 
 .showcase-p p{
     line-height: 30px;
+    font-size: 2rem;
+}
+
+li.role,
+li.team,
+li.engine,
+li.time{
+    margin: 0;
+    padding: 5px 36px ;
+    list-style: none;
+    background-repeat: no-repeat;
+    background-position: left center;
+    background-size: 30px;
+    filter: none;
+}
+
+li.role{
+    background-image: url(images/Profile.png);
+}
+
+li.team{
+    background-image: url(images/MultiProfile.png);
+}
+
+li.engine{
+    background-image: url(images/Tool.png);
+}
+
+li.time{
+    background-image: url(images/Clock.png);
+}
+
+ul.indexUL{
+    color: #864e1d;
+    filter: invert();
 }
 
 /* li{
@@ -588,69 +620,4 @@ li:nth-child(3){
 
 li:nth-child(4){
     background-image: url(images/Clock.png);
-} */
-
-.Showcase-Text li{
-    margin: 0;
-    padding: 5px 36px ;
-    list-style: none;
-    background-repeat: no-repeat;
-    background-position: left center;
-    background-size: 30px;
-    filter: none;
-} 
-
-.Showcase-Text li:nth-child(1){
-    background-image: url(images/Profile.png);
-}
-
-.Showcase-Text li:nth-child(2){
-    background-image: url(images/MultiProfile.png);
-}
-
-.Showcase-Text li:nth-child(3){
-    background-image: url(images/Tool.png);
-}
-
-.Showcase-Text li:nth-child(4){
-    background-image: url(images/Clock.png);
-} 
-
-
-
-/* li{
-    margin: 0;
-    padding: 5px 36px ;
-    list-style: none;
-    background-repeat: no-repeat;
-    background-position: left center;
-    background-size: 30px;
-}
-
-li:nth-child(1){
-    background-image: url(images/Profile.png);
-} */
-
-/* @media(max-width: 1670px){
-    .Showcase-Content{
-        flex-direction: column;
-    }
-}
-
-@media(max-width: 1070px){
-    .Showcase-Video{
-        scale: 80%;
-    }
-}
-
-@media(max-width: 880px){
-    .Showcase-Video{
-        scale: 60%;
-    }
-}
-
-@media(max-width: 570px){
-    .Showcase-Video{
-        scale: 30%;
-    }
 } */
