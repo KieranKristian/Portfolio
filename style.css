@@ -20,13 +20,8 @@ html{
 }
 
 :root{
-    /* --orange: #ff5627;
-    --darkOrange: #b14700; 
-    --cyanish: #79b1e2;
-    --darkPurple: #100c18;   */
-
-    --orange: #004b13;
-    --darkOrange: #00791a; 
+    --darkGreen: #004b13;
+    --lightGreen: #00ff37; 
     --cyanish: #79b1e2;
     --darkPurple: #100c18; 
 
@@ -70,15 +65,14 @@ a{
 .btn{
     display: inline-block;
     padding: 1.2rem 4rem;
-    border: 1px solid var(--orange);
+    border: 1px solid var(--darkGreen);
     font-size: 2.2rem;
-    
 }
 
 .btn-text{
     display: inline-block;
     padding: 0.8rem 0.5rem;
-    border-bottom: 1px solid var(--orange);
+    border-bottom: 1px solid var(--darkGreen);
 }
 
 .btn,
@@ -98,7 +92,7 @@ a{
     display: block;
     height: 100%;
     width: 100%;
-    background: var(--darkOrange); 
+    background: var(--lightGreen); 
     transition: all 0.2s cubic-bezier(1, 0.68, 0.16, 0.9);
     z-index: -1;
 }
@@ -106,7 +100,7 @@ a{
 .btn:hover::after,
 .btn-text:hover::after{
     right: 0;
-    background: var(--orange);
+    background: var(--darkGreen);
 }
 
 img{
@@ -153,7 +147,7 @@ h3{
     font-weight: 400;
     line-height: 1.3;
 
-    color: var(--orange);
+    color: var(--darkGreen);
 }
 
 h1{
@@ -172,7 +166,7 @@ h2::after{
     height: 0.3rem;
     width: 12rem;
     margin-top: 1rem;
-    background-color: var(--orange);
+    background-color: var(--darkGreen);
     max-width: 100%;
 }
 
@@ -291,18 +285,18 @@ nav a::after{
     width: 100%;
     height: 1rem;
     display: block;
-    background: var(--darkOrange);
+    background: var(--lightGreen);
     transition: all 0.2s cubic-bezier(1, 0.68, 0.16, 0.9);
 }
 
 nav a:hover{
-    color: var(--orange);
+    color: var(--darkGreen);
 }
 
 nav a:hover::after{
     right: 0;
     height: 0.2rem;
-    background: var(--orange);
+    background: var(--darkGreen);
 }
 
 .header-text-container p{
@@ -425,6 +419,10 @@ nav a:hover::after{
     flex: 0 0 650px;
 }
 
+.about-img img{
+    border-radius: 15px;
+}
+
 @media(max-width: 1350px){
     .about-img{
         flex: 0 0 500px;
@@ -479,7 +477,7 @@ footer{
     position: fixed;
     bottom: var(--gutter-small);
     right: var(--gutter-small);
-    background: var(--orange);
+    background: var(--darkGreen);
     height: 5.5rem;
     width: 5.5rem;
     display: flex;
@@ -505,6 +503,11 @@ footer{
 /*--------------------------*/
 /*---------Showcase---------*/
 /*--------------------------*/
+
+.Back-Button{
+    position: fixed;
+    margin-top: var(--gutter-xsmall);
+}
 
 .Showcase-Header nav{
     justify-content: flex-start;
@@ -537,7 +540,7 @@ footer{
     padding: 5px;
     border: 1px solid black;
     margin-top: 10px;
-     width: 99%;
+    width: 99%;
     border-radius: 15px;
 
     /*Text Style*/
@@ -549,6 +552,15 @@ footer{
 .Showcase-Text h3{
     color: #100c18;
     font-weight: 600;
+}
+
+.showcase-p{
+    width: 1024px;
+    margin-top: var(--gutter-xxsmall);
+}
+
+.showcase-p p{
+    line-height: 30px;
 }
 
 /* li{
