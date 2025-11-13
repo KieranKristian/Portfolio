@@ -20,10 +20,15 @@ html{
 }
 
 :root{
-    --orange: #ff5627;
+    /* --orange: #ff5627;
     --darkOrange: #b14700; 
     --cyanish: #79b1e2;
-    --darkPurple: #100c18;  
+    --darkPurple: #100c18;   */
+
+    --orange: #004b13;
+    --darkOrange: #00791a; 
+    --cyanish: #79b1e2;
+    --darkPurple: #100c18; 
 
     --nav-height: 12rem;
 
@@ -153,6 +158,7 @@ h3{
 
 h1{
     font-size: var(--fs-h1);
+    font-weight: 600;
     /* color: var(--orange); */
 }
 
@@ -199,15 +205,21 @@ ul{
 
 header{
     display: flex;
-    flex-direction: row-reverse;
     height: 70vh;
     border-bottom: 1px solid #222222;
-    justify-content: space-between;
+    justify-content: center;
+}
+
+.header-left{
+    display: flex;
+    flex-direction: column;
+    margin-left: var(--gutter-medium);
 }
 
 .back-video{
-    max-width: 50%;
-    margin-bottom: var(--gutter-small);
+    /* margin-bottom: var(--gutter-small); */
+    margin-top: var(--gutter-xsmall);
+    max-height: 90%;
 }
 
 @media (min-aspect-ratio: 16/9){
@@ -236,9 +248,9 @@ header{
 nav{
     display: flex;
     justify-content: flex-end;
-    align-items: center;
-    gap: var(--gutter-medium);
+    align-items: flex-start;
     height: var(--nav-height) *0.9;
+    flex-direction: column;
 }
 
 @media(max-width: 540px){
@@ -267,7 +279,7 @@ nav a{
     padding-bottom: 1rem;
     transition: all 0.2s cubic-bezier(1, 0.68, 0.16, 0.9);
 
-    color: var(--orange);
+    color: var(--cyanish);
 
 }
 
@@ -284,19 +296,13 @@ nav a::after{
 }
 
 nav a:hover{
-    color: var(--cyanish);
+    color: var(--orange);
 }
 
 nav a:hover::after{
     right: 0;
     height: 0.2rem;
     background: var(--orange);
-}
-
-.header-text-container{
-    max-height: fit-content;
-    max-width: 30%;
-    margin-left: var(--gutter-xsmall);
 }
 
 .header-text-container p{
