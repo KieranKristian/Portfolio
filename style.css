@@ -565,7 +565,8 @@ footer{
 li.role,
 li.team,
 li.engine,
-li.time{
+li.time,
+li.language{
     margin: 0;
     padding: 5px 36px ;
     list-style: none;
@@ -589,6 +590,10 @@ li.engine{
 
 li.time{
     background-image: url(images/Clock.png);
+}
+
+li.language{
+    background-image: url(images/Language.png);
 }
 
 ul.indexUL{
