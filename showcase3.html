@@ -53,11 +53,18 @@
         </div>
 
         <div class="showcase-p">
-            <h3>Code - Pigeons</h3>
+            <h3>Introduction</h3>
             <p>
-                The project scene is full of agents each with steering and flocking behaviours that influence its movement. The three flocking behaviours are built from the steering behaviours, and are added to each agents velocity via a weighting system. This means if one weighting is higher than another, its movement will be influenced by that behaviour more.
+                This project taught me a lot about debugging and optimisation, as part of my submission I had to complete a professional code report including unit tests of any optimisations I made and also a peer code review. The project necessitates a strong understanding and implementation of optimisations so that there can be more agents in the simulation at one time.
             </p>
-            
+            <p>
+                One of the biggest optimisations I made was intermittent thinking, this means that each agent was only calculating veloicty and moving every other frame as opposed to every fram. I accomplished this by halving the array of boids, looping through the first half on one frame and the second half on the next.
+            </p>
+            <img src="Showcase3images/CodeSnippet4.png" alt="">
+            <h3>Code - BOIDs</h3>
+            <p>
+                The project scene is full of BOID agents each with steering and flocking behaviours that influence its movement. The three flocking behaviours are built from the steering behaviours and are added to each agents velocity via a weighting system. This means if one weighting is higher than another, its movement will be influenced by that behaviour more.
+            </p>
             <img src="Showcase3images/CodeSnippet1.png" alt="Weightings code">
             <p>
                 There is UI in the scene which allows the user to change values during runtime, you can change each of the weightings. You can also change how many agents to spawn and can alter the size of the boundary that they are contained to.
@@ -77,9 +84,13 @@
             </p>
             <h3>Code - Predator/Prey</h3>
             <p>
-                Occasionally, some pigeons will fly down to the ground to start wandering around and eating breadcrumbs. There is also a cat on the ground. If the cat is within a certain distance of a group of pigeons, it will use a similar equation to cohesion to go to the average location of the pigeos. Once it is close enough to a pigeon, it will start to pursue after it. The pursue function works by taking the pigeons velocity and predicting where it will be, it then seeks to this location.
+                Occasionally, some pigeons will fly down to the ground to start wandering around and eating breadcrumbs. There is also a cat on the ground. If the cat is within a certain distance of a group of pigeons, it will use a similar equation to cohesion to go to the average location of the pigeons. Once it is close enough to a pigeon, it will start to pursue after it. 
             </p>
-            <img src="Showcase3images/CodeSnippet2.png" alt="Pursue code">
+            <img src="Showcase3images/CodeSnippet3.png" alt="Pursue code">
+            <p>
+                The pursue function works by taking the pigeons velocity and predicting where it will be, it then seeks to this location.
+            </p>
+            <img src="Showcase3images/CodeSnippet2.png" alt="">
         </div>
     </div>
 
