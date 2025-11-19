@@ -27,7 +27,7 @@
 
     <div class="Showcase-Content">
         <div class="Showcase-Video">
-            <iframe width=1024px height=576px src="https://www.youtube.com/embed/oDMgqaNTyBI"></iframe>
+            <iframe width=1024px height=576px src="https://www.youtube.com/embed/oDMgqaNTyBI?vq=hd1080p"></iframe>
         </div>
 
         <div class="showcase-about">
@@ -54,11 +54,40 @@
         </div>
 
         <div class="showcase-p">
+            <h3>Introduction</h3>
             <p>
-                Being the only programmer in the group for this project presented a fun challenge, especially as this was my first experience working in a group. I was tasked with creating a physics based object carrying system for the game which was used in both of our levels that we created. The objects have to be carried by two people, otherwise the side of the object that wasn't being carried would remain stationary. <br><br>
-                The system works by having configurable joints on two ends of an object. Each of these joints would then attach to a point on the player when interacted with, while also locking the player to the object so that the two wouldn't separate. This method means that picking up the one side of the object would mean that the other joint on the other side of the object would remain locked, so only the one end of the object would move. This resulted in a fun, scalable game mechanic that necessitated teamwork in order to complete the objectives. <br><br>
-                This project also boosted my knowledge and experience in project management, as we had to use tools such as HackNPlan to plan out our project sprints as a group and also to delegate and keep track of work.
+                This project was a fun challenge in which I was able to really push my abilities and also gain a lot of valuable experience. This was my first project that I made with a group of people, our group was also multidisciplined so I ended up being the only programmer in the group. 
             </p>
+            <p>
+                This meant I had a lot of responsibilities as I had to integrate the assets that I was given into the game engine alongside programming mechanics that made the final product feel fun and polished.
+            </p>
+            <p>
+                This also helped boost my knowledge and experience with project management, as we had to use tools such as HackNPlan to plan out our project sprints as a group and also to delegate and keep track of work.
+            </p>
+            <h3>Code - Carrying Mechanic</h3>
+            <p>
+                This mechanic was the one I had to had to work on the most, as I had to figure out a way for an object to be carried by two people at once. I struggled with this, as all the solutions I could find featured only one character holding an object.
+            </p>
+            <p>
+                The solution I came up with was to have two configurable joints on the object, one on each side. This allowed me to attach the end of the object to a point on the player character. This also meant that if only one person was carrying one of the ends, the other end would not move as it was not attached to anything.
+            </p>
+            <img src="Showcase1images/CodeSnippet1.png" alt="Carrying Code">
+            <h3>Code - Interaction System</h3>
+            <p>
+                For this project, I also had to develop a scalable interaction system, so that the characters could interact with different types of objects and also NPC's, which would display dialogue when spoken to.
+            </p>
+            <p>
+                I achieved this by using an interface, with a function that could be overwritten by anything that inherited from it, this allowed me to change the functionality of the interaction with each object without having to completely rewrite the interaction code itself for each object.
+            </p>
+            <img src="Showcase1images/CodeSnippet2.png" alt="Interaction interface">
+            <p>
+                Detecting an interactable object was really simple, I would just perform an overlap sphere on the players position and find any objects with the IInteractable interface. From here, I could change the UI that appeared over the players head to display different things depending on the thing being interacted with, for example, the tree would say "Chop!" but an NPC would say "Talk".
+            </p>
+            <!-- <img src="Showcase1images/Interaction (2).png" alt=""> -->
+             <video autoplay loop muted plays-inline width="900px" height="400px">
+                <source src="Showcase1images/InteractionVideo.mp4" type="video/mp4">
+            </video>
+            <img src="Showcase1images/CodeSnippet3.png" alt="">
         </div>
     </div>
 

@@ -213,12 +213,16 @@ header{
     display: flex;
     flex-direction: column;
     margin-left: var(--gutter-medium);
+    margin-right: var(--gutter-huge);
     justify-content: center;
+    max-width: 20%;
 }
 
 .back-video{
     margin-top: var(--gutter-xsmall);
     max-height: 90%;
+
+    max-width: fit-content;
 }
 
 @media (min-aspect-ratio: 16/9){
@@ -394,6 +398,16 @@ nav a:hover::after{
     gap: 0 var(--gutter-large);
 }
 
+.image-btn{
+    display: flex;
+    transition: all 0.3s;
+}
+
+.image-btn:hover,
+.image-btn:focus{
+    transform: scale(1.05);
+}
+
 /*--------------------------*/
 /*---------About Me---------*/
 /*--------------------------*/
@@ -453,16 +467,14 @@ nav a:hover::after{
 /*--------------------------*/
 
 footer{
-    margin: var(--gutter-large) 0 var(--gutter-small);
+    margin: var(--gutter-small) 0 var(--gutter-small);
     text-align: center;
 }
 
 .footer-social{
-    margin-bottom: var(--gutter-small);
-}
-
-.footer-social a:not(last-child){
-    margin-right: var(--gutter-xxsmall);
+    display: flex;
+    justify-content: center;
+    gap: var(--gutter-xxsmall);
 }
 
 .footer-social img{
@@ -564,8 +576,17 @@ footer{
 .showcase-p p{
     line-height: 30px;
     font-size: 2rem;
+    margin-bottom: 1.5rem;
 }
 
+.showcase-p h3{
+    margin-top: var(--gutter-xxsmall);
+    margin-bottom: var(--gutter-xxsmall);
+}
+
+/*--------------------------*/
+/*----------Links-----------*/
+/*--------------------------*/
 li.role,
 li.team,
 li.engine,
