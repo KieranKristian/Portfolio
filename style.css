@@ -35,7 +35,7 @@ html{
     --fs-h1: 7.5rem;
     --fs-h2: 4.5rem;
     --fs-h3: 4rem;
-    --fs-h4: 3rem;
+    --fs-h4: 2.5rem;
     --fs-body: 2rem;
 
     --gutter-xxsmall: 2rem;
@@ -148,7 +148,8 @@ section{
 
 h1,
 h2,
-h3{
+h3,
+h4{
     font-weight: 400;
     line-height: 1.1;
 
@@ -177,6 +178,10 @@ h2::after{
 h3{
     font-size: var(--fs-h3);
     max-width: fit-content;
+}
+
+h4{
+    font-size: var(--fs-h4);
 }
 
 @media(max-width: 590px){
@@ -580,7 +585,6 @@ footer{
 }
 
 .showcase-p h3{
-    margin-top: var(--gutter-xxsmall);
     margin-bottom: var(--gutter-xxsmall);
 }
 

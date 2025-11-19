@@ -53,11 +53,33 @@
         </div>
 
         <div class="showcase-p">
+            <h3>Code - Pigeons</h3>
             <p>
-                This project allowed me to greatly improve my skills in using C++ in unreal. I had to have agents all with steering and flocking behaviours that could be affected during runtime using widget UI elements that would link to the C++ agent classes. The steering behaviours used include: seek, flee, pursue, evade and arrival. The flocking behaviours include: cohesion, separation and alignment.<br><br>
-                I learned a lota about debugging and optimisation during this project, having to complete a professional code report alongside my submission. This project necessitated strong optimisations so that I could have more agents in the simulation without it slowing significantly. <br><br>
-                I also added a predator/prey style demonstration, with a cat on the floor that would chase after any pigeons that had gone to the ground to eat. This was a fun additional aspect of the project that meant I got to explore more steering behaviours such as pursue, evade and arrival.
+                The project scene is full of agents each with steering and flocking behaviours that influence its movement. The three flocking behaviours are built from the steering behaviours, and are added to each agents velocity via a weighting system. This means if one weighting is higher than another, its movement will be influenced by that behaviour more.
             </p>
+            
+            <img src="Showcase3images/CodeSnippet1.png" alt="Weightings code">
+            <p>
+                There is UI in the scene which allows the user to change values during runtime, you can change each of the weightings. You can also change how many agents to spawn and can alter the size of the boundary that they are contained to.
+            </p>
+            <p>The three flocking behaviours are:</p>
+            <h4>Separation</h4>
+            <p>
+                Separation calculates the average location of all the surrounding agents, it then flees away from that location.
+            </p>
+            <h4>Cohesion</h4>
+            <p>
+                Cohesion calculates the average location of all the surrounding agents, it then seeks toward that location.
+            </p>
+            <h4>Alignment</h4>
+            <p>
+                Alignment calculates the average direction of the surrounding agents, and moves the pigeon in that direction.
+            </p>
+            <h3>Code - Predator/Prey</h3>
+            <p>
+                Occasionally, some pigeons will fly down to the ground to start wandering around and eating breadcrumbs. There is also a cat on the ground. If the cat is within a certain distance of a group of pigeons, it will use a similar equation to cohesion to go to the average location of the pigeos. Once it is close enough to a pigeon, it will start to pursue after it. The pursue function works by taking the pigeons velocity and predicting where it will be, it then seeks to this location.
+            </p>
+            <img src="Showcase3images/CodeSnippet2.png" alt="Pursue code">
         </div>
     </div>
 
