@@ -21,7 +21,7 @@
             <a href="index.html#work" class="Back-Button">&larr; &nbsp; Go Back </a>
         </nav>
         <div class="title">
-            <h2>Star Map Navigation</h2>
+            <a href="https://github.com/KieranKristian/Star-Map-Navigation" class="title-btn"><h2>Star Map Navigation</h2></a>
         </div>
     </div>
 
@@ -55,11 +55,14 @@
         <div class="showcase-p">
             <h3>Code - Stars</h3>
             <p>
-                The project itself features a galaxy of individually named stars that are generated at runtime, there are a lot of changeable parameters in this project such as the shape of the galaxy itself.
+                The project itself features a galaxy of individually named stars that are generated at runtime, there are a lot of changeable parameters in this project such as the shape of the galaxy itself. This worked by having multiple different functions that would find a random coordinate, I discovered the shapes by just changing values around and experimenting.
             </p>
             <video autoplay loop muted plays-inline width="600px" height="400px">
                 <source src="Showcase2images/GalaxiesVideo.mp4" type="video/mp4">
             </video>
+            <img src="Showcase1images/GalaxyCode1.png" alt="">
+            <img src="Showcase1images/GalaxyCode2.png" alt="">
+            <img src="Showcase1images/GalaxyCode3.png" alt="" width="800px">
             <p>
                 Each star also had routes to surrounding stars that were close enough, this was simple enough as each star would just do a radius check to find the stars close to it, and then add it to its array of neighbours. To make the simulation more interesting, I had each star remove a random amount of neighbours so that not all the stars were connected to each other. This left some areas inaccessable and some stars became completely isolated. Each star also stored the distance to all of the surrounding neighbour stars.
             </p>
@@ -87,9 +90,25 @@
             <p>
                 For ally stars, all the distances will be halved, meaning it takes half the amount of fuel to travel to these stars, which influences the pathfinding algorithm.
             </p>
+            <h3>Check out the project on Github here!</h3>
+            <a href="https://github.com/KieranKristian/Star-Map-Navigation" class="btn">Source Files</a>
         </div>
     </div>
 
+    <!--  Footer  -->
+
+    <footer>
+        <div class="row">
+            <div class="footer-social">
+                <a href="https://github.com/KieranKristian" class="gh-link">
+                    <img src="images/github-icon.png" alt="">
+                </a>
+                <a href="https://www.linkedin.com/in/kieran-kristian/" class="gh-link">
+                    <img src="images/linkedIn-icon.png" alt="">
+                </a>
+            </div>
+        </div>
+    </footer>
 </body>
 
 </html>
