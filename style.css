@@ -118,8 +118,21 @@ section{
 }
 
 .row{
-    max-width: 1180px;
+    max-width: 1300px;
     margin: 0 auto;
+}
+
+.work-row{
+    max-width: 1300px;
+    margin: 0 auto;
+    display: flex;
+}
+
+.work-row h2{
+    margin-right: var(--gutter-small);
+}
+.work-row a{
+    font-weight: 700;
 }
 
 @media(max-width: 1350px){
@@ -433,8 +446,13 @@ nav a:hover::after{
     }
 }
 
+.about-text h3{
+    font-size: 3rem;
+}
+
 .about-text p {
     margin-bottom: var(--gutter-xsmall);
+    font-size: large;
 }
 
 .about-img{
@@ -443,6 +461,18 @@ nav a:hover::after{
 
 .about-img img{
     border-radius: 15px;
+}
+
+.about-text ul{
+    font-size: large;
+}
+
+.Skills{
+    display: flex;
+}
+
+.Skills ul{
+    margin-right: var(--gutter-small);
 }
 
 @media(max-width: 1350px){
