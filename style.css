@@ -130,6 +130,7 @@ section{
 
 .work-row h2{
     margin-right: var(--gutter-small);
+    margin-left: var(--gutter-xxsmall);
 }
 .work-row a{
     font-weight: 700;
@@ -249,7 +250,7 @@ header{
     header{
         text-align: center;
 
-        height: 70vh;
+        height: 100vh;
         display: flex;
         flex-direction: column-reverse;
         align-items: center;
@@ -639,6 +640,10 @@ footer{
     }
 
     .showcase-p{
+        max-width: 90%;
+    }
+
+    .showcase-p video{
         max-width: 90%;
     }
 
