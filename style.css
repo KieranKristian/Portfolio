@@ -245,21 +245,31 @@ header{
     max-width: fit-content;
 }
 
-@media (min-aspect-ratio: 16/9){
-    .back-video{
-        width: 100%;
-        height: 100%;
-    }
-}
-
 @media(max-width: 540px){
     header{
         text-align: center;
+
+        height: 70vh;
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+
+    header h1{
+        font-size: var(--fs-h1);
     }
 
     .header-text-container{
         display: flex;
         justify-content: center;
+    }
+
+    .header-left{
+        margin: 0;
+    }
+
+    .back-video{
+        width: 80%;
     }
 }
 
@@ -274,12 +284,6 @@ nav{
     align-items: flex-start;
     height: var(--nav-height) *0.9;
     flex-direction: column;
-}
-
-@media(max-width: 540px){
-    nav{
-        justify-content: center;
-    }
 }
 
 @media(max-width: 420px){
@@ -353,17 +357,15 @@ nav a:hover::after{
     }
 }
 
-/* .work-box:first-of-type{
-    margin-top: var(--gutter-medium);
-}
-
-.work-box:not(:last-child){
-    margin-bottom:var(--gutter-medium);
-} */
-
 @media(max-width: 750px){
     .work-box:not(:last-child){
-        margin-bottom:var(--gutter-huge);
+        margin-bottom:var(--gutter-small);
+    }
+}
+
+@media(max-width: 540px){
+    .work-box{
+        max-width: 80%;
     }
 }
 
@@ -629,6 +631,24 @@ footer{
 
 .showcase-p h3{
     margin-bottom: var(--gutter-xxsmall);
+}
+
+@media(max-width:540px){
+    .showcase-about{
+        max-width: 90%;
+    }
+
+    .showcase-p{
+        max-width: 90%;
+    }
+
+    .Showcase-Video{
+        scale: 50%;
+    }
+
+    .Back-Button{
+        position: relative;
+    }
 }
 
 /*--------------------------*/
