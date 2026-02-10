@@ -634,13 +634,21 @@ footer{
     margin-bottom: var(--gutter-xxsmall);
 }
 
-@media(max-width:540px){
+@media(max-width:1000px){
     .showcase-about{
         max-width: 90%;
     }
 
+    .showcase-about p{
+        font-size: medium;
+    }
+
     .showcase-p{
         max-width: 90%;
+    }
+
+    .showcase-p p{
+        font-size: medium;
     }
 
     .showcase-p video{
@@ -653,6 +661,12 @@ footer{
 
     .Back-Button{
         position: relative;
+    }
+}
+
+@media(max-width:510px){
+    .Showcase-Video{
+        scale: 30%;
     }
 }
 
